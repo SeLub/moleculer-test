@@ -1,0 +1,25 @@
+{
+  "name": "moleculer-test",
+  "version": "1.0.0",
+  "description": "Moleculer test backend application.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeLub/moleculer-test.git"
+  },
+  "keywords": [],
+  "author": "Sergey Lubimov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SeLub/moleculer-test/issues"
+  },
+  "homepage": "https://github.com/SeLub/moleculer-test#readme",
+  "dependencies": {
+    "moleculer": "0.14.29",
+    "moleculer-web": "0.10.5"
+  }
+}
