@@ -1,30 +1,4 @@
-let { ServiceBroker } = require("moleculer");
-let ApiService = require("moleculer-web");
-
-let broker = new ServiceBroker({ logger: console });
-broker.createService({
-      name: "user",
-      actions: {
-          hello() {
-              return "Hello API Gateway!"
-          }
-      }
-  });
-
-// Create a service
-broker.createService({
-      mixins: [ApiService],
-  
-      settings: {
-          routes: [{
-              aliases: {
-                  "REST users": "users",
-              }
-          }]
-      }
-  });
-
-  broker.createService({
+const service = {
       name: "users",
       actions: {
           list() {
@@ -52,10 +26,6 @@ broker.createService({
             return `Delete user ${ctx.params.id}!`
          },          
       }
-  });
+  };
 
-// Load API Gateway
-//broker.createService(ApiService);
-
-// Start server
-broker.start();
+module.exports = service;

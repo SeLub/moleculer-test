@@ -4,8 +4,8 @@
   "description": "Moleculer test backend application.",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "dev": "moleculer-runner --repl --hot services",
+    "start": "moleculer-runner services"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
   "homepage": "https://github.com/SeLub/moleculer-test#readme",
   "dependencies": {
     "moleculer": "0.14.29",
+    "moleculer-repl": "0.7.3",
     "moleculer-web": "0.10.5"
   }
 }
