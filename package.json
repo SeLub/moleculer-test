@@ -20,6 +20,7 @@
   "homepage": "https://github.com/SeLub/moleculer-test#readme",
   "dependencies": {
     "moleculer": "0.14.29",
+    "moleculer-io": "2.2.0",
     "moleculer-repl": "0.7.3",
     "moleculer-web": "0.10.5"
   }
